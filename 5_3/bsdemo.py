@@ -1,11 +1,16 @@
 #!/usr/bin/python
 # Fun with beautifulsoup
+# Extracting names and phone numbers from web
+# This script was developed to use 'http://www.pmb.ro/contact/pmb/pmb_telefoane.php'
+# Please add your own page to scan and adapt the script, if necesary
 # 01.06.2017, Nicolae Erast
 
 from bs4 import BeautifulSoup as BS
 
 import requests
-page = requests.get('http://www.pmb.ro/contact/pmb/pmb_telefoane.php')
+page_to_scan = 'http://www.domain.ro/contact/phones.php'
+
+page = requests.get(page_to_scan)
 content = page.content
 
 pb = [] #phonebook
