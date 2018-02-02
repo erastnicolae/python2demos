@@ -9,7 +9,8 @@ import smtplib
 import getpass
 import sys
 
-to = 'erast.nicolae@gmail.com'
+# add bellow email address to email to
+to = ''
 
 c = NTPClient()
 r = c.request('2.ro.pool.ntp.org')
