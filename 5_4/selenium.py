@@ -1,11 +1,14 @@
 #!/usr/bin/python
 # Fun with selenium
+# Extracting names and phone numbers from web
+# This script was developed to use 'http://www.pmb.ro/contact/pmb/pmb_telefoane.php'
+# Please add your own page to scan and adapt the script, if necesary
 # 02.06.2017, Nicolae Erast
 
 from selenium import webdriver
 import os, time
 
-page = 'http://www.pmb.ro/contact/pmb/pmb_telefoane.php'
+page = 'http://www.domain.ro/contact.php'
 
 drvpath = '/usr/lib/chromium-browser/chromedriver'
 browser = webdriver.Chrome(drvpath)
