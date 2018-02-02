@@ -8,8 +8,8 @@ for some scripts you have to install additional modules
 
 2.1. Importable module with descriptors and forbidden inheritance
 2.2. Importable package with module
-- pass1 - importing and renaming class
-- pass2 - running module imported by other module
+2.2.1. pass1 - importing and renaming class
+2.2.2. pass2 - running module imported by other module
 
 2.3. Invoking module "this" and analyse
 2.4. Importing csv and dynamic class creation
